@@ -33,3 +33,11 @@ respectivamente a distribuição dos pesos no lado esquerdo e no direito. Todos 
 ## Saída:
 Para cada caso de entrada deve ser impresso em uma linha: “OK” se os pesos estiverem equilibrados. Ou “E > D: p kg” se
 o lado esquerdo for mais pesado que o direito por “p” quilogramas. Ou “D > E: p kg” caso o direito seja mais pesado.
+
+|Exemplo de entrada:|Saída para o exemplo de entrada:|
+|-------------------|--------------------------------|
+|`4 10 15 3 2`      |`OK`                            |
+|`3 20 5 5`         |                                |
+|                   |                                |
+|`4 10 25 3 5`      |`E > D: 3 kg`                   |
+|`4 20 5 5 10`      |                                |
