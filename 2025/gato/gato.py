@@ -1,3 +1,6 @@
+from time import perf_counter
+
+
 class Casa:
     def __init__(self, longitude: str, latitude: str, raio: str) -> None:
         self.longitude: int = int(longitude)
@@ -11,7 +14,7 @@ class Gatito:
         self.latitude: int = int(latitude)
 
 
-def main():
+def main() -> None:
     valores_casa: list[str] = input().split()
     casa: Casa = Casa(valores_casa[0], valores_casa[1], valores_casa[2])
 
@@ -30,4 +33,11 @@ def main():
 
 
 if __name__ == "__main__":
+    inicio: float = perf_counter()
     main()
+    fim: float = perf_counter()
+
+    tempo: float = fim - inicio
+
+    if tempo > 1.0:
+        print(f"LIMITE DE TEMPO EXCEDIDO ({tempo} s)")
