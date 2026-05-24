@@ -1,11 +1,8 @@
 from time import perf_counter
 
 
-<<<<<<< HEAD
 def main() -> None:
-=======
-def main():
->>>>>>> d7bd1375c2347d92e8033b8e51b0f2dc7536435c
+
     jogadores: int = int(input())
     jogadas: list[int] = []
 

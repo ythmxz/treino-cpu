@@ -1,11 +1,7 @@
 from time import perf_counter
 
 
-<<<<<<< HEAD
 def main() -> None:
-=======
-def main():
->>>>>>> d7bd1375c2347d92e8033b8e51b0f2dc7536435c
     nomes: list[str] = input().split()
     iniciais: list[str] = [nome[0].lower() for nome in nomes]
 
