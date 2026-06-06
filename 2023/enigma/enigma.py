@@ -1,6 +1,3 @@
-from time import perf_counter
-
-
 def main() -> None:
     zenit: list[str] = ["z", "e", "n", "i", "t", "Z", "E", "N", "I", "T"]
     polar: list[str] = ["p", "o", "l", "a", "r", "P", "O", "L", "A", "R"]
@@ -33,11 +30,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    inicio: float = perf_counter()
     main()
-    fim: float = perf_counter()
-
-    tempo: float = fim - inicio
-
-    if tempo > 1.0:
-        print(f"LIMITE DE TEMPO EXCEDIDO ({tempo} s)")
